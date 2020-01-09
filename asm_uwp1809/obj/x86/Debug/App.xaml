@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="asm_uwp1809.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:asm_uwp1809">
+
+</Application>
+

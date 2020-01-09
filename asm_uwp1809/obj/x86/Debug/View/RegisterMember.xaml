@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="asm_uwp1809.View.RegisterMember"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:asm_uwp1809.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer>
+        <StackPanel Margin="20, 20, 20, 20">
+            <TextBlock Text="Create new account" FontSize="25" HorizontalAlignment="Center" Margin="0,25,0,10" FontWeight="Bold"></TextBlock>
+            <TextBox x:ConnectionId='2' x:Name="Email" Header="Email"/>
+            <TextBlock x:ConnectionId='3' x:Name="email" Foreground="Red"></TextBlock>
+            <PasswordBox x:ConnectionId='4' x:Name="Password" Header="Password" Margin="0, 20, 0 , 0"/>
+            <TextBlock x:ConnectionId='5' x:Name="password" Foreground="Red"></TextBlock>
+            <Grid Margin="0, 20, 0 , 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBox x:ConnectionId='22' x:Name="FirstName" Header="First Name" Grid.Row="0" Grid.Column="0" Margin="0, 0, 10, 0"/>
+                <TextBlock x:ConnectionId='23' x:Name="firstName" Grid.Row="1" Grid.Column="0" Foreground="Red"></TextBlock>
+                <TextBox x:ConnectionId='24' x:Name="LastName" Header="Last Name" Grid.Row="0" Grid.Column="1"/>
+                <TextBlock x:ConnectionId='25' x:Name="lastName" Grid.Row="1" Grid.Column="1" Foreground="Red"></TextBlock>
+            </Grid>
+            <TextBox x:ConnectionId='6' x:Name="AvatarUrl" Header="Avatar Link" Margin="0, 20, 0 , 0"/>
+            <TextBlock x:ConnectionId='7' x:Name="avatar" Foreground="Red"></TextBlock>
+
+            <Image x:ConnectionId='8' x:Name="Avatar" Width="150" Height="100" HorizontalAlignment="Left" Margin="20"/>
+
+            <Button x:ConnectionId='9' Content="Capture Your Photo" Margin="0, 20, 0 , 0"                     />
+            <TextBox x:ConnectionId='10' x:Name="Phone" Header="Phone Number" Margin="0, 20, 0 , 0"/>
+            <TextBlock x:ConnectionId='11' x:Name="phone" Foreground="Red"></TextBlock>
+            <TextBox x:ConnectionId='12' x:Name="Address" Header="Address" AcceptsReturn="True" Height="100" Margin="0, 20, 0 , 0"/>
+            <TextBlock x:ConnectionId='13' x:Name="address" Foreground="Red"></TextBlock>
+            <TextBox x:ConnectionId='14' x:Name="Introduction" Header="Introduction" AcceptsReturn="True" Height="100" Margin="0, 20, 0 , 0"/>
+            <TextBlock x:ConnectionId='15' x:Name="introduction" Foreground="Red"></TextBlock>
+            <TextBlock Text="Gender" Margin="0, 20, 0 , 0"/>
+            <StackPanel Orientation="Horizontal" Margin="0, 20, 0 , 0">
+                <RadioButton x:ConnectionId='19' Content="Male" Tag="1"                              />
+                <RadioButton x:ConnectionId='20' Content="Female" Tag="0"                              />
+                <RadioButton x:ConnectionId='21' Content="Other" Tag="2" IsChecked="True"                              />
+            </StackPanel>
+            <CalendarDatePicker x:ConnectionId='16' x:Name="BirthdayPicker" Header="Birthday"  Margin="0, 20, 0 , 0"                                         />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 20, 0 , 0">
+                <Button x:ConnectionId='17' Content="Sign up" Margin="0, 0, 20 , 0"                  />
+                <Button x:ConnectionId='18' Content="Sign in"                 />
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
+
